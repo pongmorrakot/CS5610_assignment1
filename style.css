@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
-
 .center {
     display: flex;
     flex-direction: column;
@@ -15,7 +14,7 @@
     width: 10%;
     padding-left: 1%;
     margin: 0%;
-}  
+}
 
 .content {
     padding-left: 10%;
@@ -25,12 +24,14 @@
 body {
     display: flex;
     flex-direction: row;
-    height:100%;
+    height: 100%;
     margin: 0%;
     background-color: #eff7fa;
 }
 
+
 /* Nav Bar configuration */
+
 .left {
     display: flex;
     flex-direction: column;
@@ -45,9 +46,9 @@ body {
     align-items: stretch center;
     position: fixed;
     /* justify-content: center; */
-}  
+}
 
-  .left a {
+.left a {
     /* flex: 1; */
     text-align: center;
     display: block;
@@ -55,50 +56,53 @@ body {
     padding: 8px 16px;
     text-decoration: none;
     font-size: 140%;
-  }
-  
-  .left a:hover {
+}
+
+.left a:hover {
     background-color: #25528b;
     color: white;
-  }
+}
 
-  .left .current {
+.left .current {
     background-color: #406fad;
     color: white;
-  }
+}
 
-  /* Font and site-wide config*/
-  html {
+
+/* Font and site-wide config*/
+
+html {
     height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 120%;
-  }
+}
 
-  h1 {
+h1 {
     font-size: 200%;
     font-family: 'Montserrat', sans-serif;
-  }
+}
 
-  h3 {
-    font-weight:200;
-    font-size: 200%;  
-  }
+h3 {
+    font-weight: 200;
+    font-size: 200%;
+}
 
-  a {
+a {
     color: rgb(32, 65, 155);
     text-decoration: none;
-  }
+}
 
-  a:hover {
+a:hover {
     color: rgb(25, 39, 80);
-  }
-  .img {
+}
+
+.img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-  }
+}
 
-  .bottom-space {
-      min-height: 20%;
-  }
+.bottom-space {
+    min-height: 20%;
+}
