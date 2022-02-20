@@ -11,7 +11,7 @@
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
+    width: 5%;
     padding-left: 1%;
     margin: 0%;
 }
@@ -27,6 +27,7 @@ body {
     height: 100%;
     margin: 0%;
     background-color: #eff7fa;
+    opacity: 0;
 }
 
 
@@ -37,7 +38,7 @@ body {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
+    width: 0;
     height: 100%;
     padding-right: 1%;
     background-color: #c4d7df;
@@ -45,6 +46,10 @@ body {
     padding: 0;
     align-items: stretch center;
     position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
     /* justify-content: center; */
 }
 
@@ -105,4 +110,22 @@ a:hover {
 
 .bottom-space {
     min-height: 20%;
+}
+
+.rotate {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -webkit-transition: opacity 2s ease-in;
+}
+
+.toggle-able {
+    visibility: hidden;
 }

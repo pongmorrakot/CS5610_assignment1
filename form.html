@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="left">
+        <a href="./index.html">Home</a>
+        <a href="./main.html">Main</a>
+        <a href="./about.html">About</a>
+        <a href="./form.html" class="current">Contact</a>
+    </div>
+    <div class="center content">
+        <img class="openBtn" src="button.png" onclick="openNav()" width="50" height="50">
+        <h1>Sign up for my totally not sketchy mailing list</h1>
+        <form id="contact-form" onsubmit="return takeSubmit()">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="contact-method">Your preferred method to be contacted:</label><br>
+            <input type="radio" id="contact-method-phone" name="contact-method" value="phone" required><label for="contact-phone">Phone</label><br>
+            <input type="radio" id="contact-method-email" name="contact-method" value="email" required><label for="contact-phone">Email</label><br>
+
+            <label class="toggle-able" for="phone" id="phone-label">Phone Number:</label><br>
+            <input class="toggle-able" type="number" id="phone" name="phone"><br>
+
+            <label class="toggle-able" for="email" id="email-label">Email:</label><br>
+            <input class="toggle-able" type="email" id="email" name="email"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="right">
+    </div>
+    <script src="./menu.js"></script>
+    <script src="./pageFade.js"></script>
+    <script src="./form.js"></script>
+</body>
+
+</html>
